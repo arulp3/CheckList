@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: 'Georama', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body{
+    
+    background-color: darkseagreen;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    margin: 2px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form button{
+    color: tomato;
+    background: rgba(233, 229, 228, 0.39);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: tomato;
+    color: black
+}
+
+.toDo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDo_list{
+    width: 20%;
+    min-height: 30%;
+    list-style: none;
+}
+
+.toDo{
+    line-height: 1px;
+    margin: 2px;
+    border-bottom: 1px solid #2F5D62;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.toDo li{
+    flex: 1;
+}
+
+.toDoItem{
+    padding: 0rem 0.5rem;
+}
+
+.compButton, .deleteButton{
+    margin: 2px;
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size:  1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.compButton:hover{
+    background: #5D8233;
+    color: white;
+}
+
+.deleteButton:hover{
+    background: #C84B31;
+    color: white;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+select{
+    padding: 5px;
+    height: 40px;
+    color: black;
+    width: 10rem;
+    cursor: pointer;
+
+}
+.select ::after{
+    content: "\25BC";
+}
